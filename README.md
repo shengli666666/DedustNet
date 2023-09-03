@@ -42,7 +42,7 @@
 
 #### Real-world Dust Dataset:
 
-* Dataset: RB-Dust; Paper: [RESIDE: A Benchmark for Single Image Dehazing](https://arxiv.org/pdf/2306.07244.pdf)(www.agriscapes-dataset.com)
+* Dataset: RB-Dust; Paper: [RB-Dust – A Reference-based Dataset for Vision-based Dust Removal](https://arxiv.org/pdf/2306.07244.pdf)(www.agriscapes-dataset.com)
 
 #### Real-world Fog Datasets:
 
