@@ -24,7 +24,7 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
    
 ## Network Architecture
 
-### Network
+### DedustNet Network
 
 <center>
     <img src='network/networknew.png'>
@@ -41,7 +41,7 @@ DWT-Former Block mainly uses DWT to convert spatial domain information into wave
 
 We introduce the SFAS in the Swin Transformer Block. Specifically, we perform an additional convolution of the features $I_{\rm output}$ from the DWT, DWT-Former Block achieves a dynamic aggregation style of information with the production of MHSA in the spatial dimension.
 
-We use Multi-Head Cross-Attention (MHCA) in CIFM Moudle to interoperate the information of the encoding and decoding stagesWe propose the Cross-level Information Fusion Module (CIFM) to fuse different levels of features, recovering rich texture details and information.
+We use Multi-Head Cross-Attention (MHCA) in CIFM Moudle to interoperate the information of the encoding and decoding stages, and propose the Cross-level Information Fusion Module (CIFM) to fuse different levels of features, recovering rich texture details and information.
 
 ## Dependencies and Installation
 
