@@ -1,6 +1,6 @@
 # DedustNet: A Frequency-dominated Swin Transformer-based network for Agricultural Dust Removal
 
-This is the official PyTorch codes for the paper:
+Author Information:
 
 Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@zhangshengli\_win@163.com)
 
@@ -12,7 +12,7 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
     * [Real world Dust Dataset ](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset)
     * [Real world Fog Datasets](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets)
 * [Quick Run](https://github.com/shengli666666/DedustNet#Quick-Run)
-* [Quantitative comparisons ()](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
+* [Quantitative comparisons](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
     * [Comparison of objective indicators](https://github.com/shengli666666/DedustNet#Comparison-of-objective-indicators)
     * [Comparison of Overhead](https://github.com/shengli666666/DedustNet#Comparison-of-Overhead)
 * [Qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
@@ -34,8 +34,8 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
 ## Dependencies and Installation
 
 * python3.9
-* PyTorch>=1.0
-* NVIDIA GPU+CUDA
+* PyTorch>=1.0.1
+* NVIDIA GPU+CUDA>=11.4
 * numpy
 * matplotlib
 * pytorch_wavelets
@@ -56,22 +56,21 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
     DedustNet
     |-- README.md
     |-- datasets
-        |--RealWorld
-            |-- dust
-                |-- hazy
-                    |-- *.png
-                |-- clear
-                    |-- *.png
-            |-- dense
-                |-- hazy
-                    |-- *.png
-                |-- clear
-                    |-- *.png
-            |-- nhhaze
-                |-- hazy
-                    |-- *.png
-                |-- clear
-                    |-- *.png
+      |-- dust
+          |-- dusty
+              |-- *.png
+          |-- clear
+              |-- *.png
+      |-- dense
+          |-- hazy
+              |-- *.png
+          |-- clear
+              |-- *.png
+      |-- nhhaze
+          |-- hazy
+              |-- *.png
+          |-- clear
+              |-- *.png
 ```
 </details>
 
@@ -88,7 +87,7 @@ python test.py --task Task_Name --input_dir path_to_images
 Here is an example to perform Dust:
 
 ```shell
-python test.py --task dust --input_dir dataset/dusttest/hazy
+python test.py --task dust --input_dir dataset/dusttest/dusty
 ```
 We have included some test images from the experimental results presented in our paper at `./image file/` folder. 
 * `overhead.py` is a file where you can test network model's parameters (Params), multiply-accumulate operations (MACs), floating-point operations (FLOPs) and inference time.
