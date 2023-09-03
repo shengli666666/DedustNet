@@ -8,16 +8,19 @@
 * [Citation]()
     * [Dependencies and Installation]()
     * [Datasets Preparation]()
-        * [Synthetic Fog Dataset]()
-        * [Real-world Fog Datasets]()
+        * [Real-world Dust Dataset (RB-Dust)]()
+        * [Real-world Fog Datasets (Dense-Haze, NH-Haze)]()
 * [Quick Run]()
-* [Inference Time Comparisons]()
-* [Qualitative Comparisons(GIF display)]()
-* [Ablation experiments]()
-    * [Visualization results on the effect of the value of α]()
-    * [Visualization comparison of ablation experiments on loss function]()
-    * [Visualization comparison of ablation experiments on network structure]()
-* [Network Details]()
+* [Quantitative comparisons]()
+    * [Comparison of objective indicators (PSNR, SSIM, NIQE, Entropy)]
+    * [Comparison of Overhead (#Param, #FLOPs, #Runtime)]
+* [Qualitative Comparisons]()
+    * [RB-Dust datasets]()
+    * [Dense-Haze]()
+    * [NH-Haze]()
+  
+* [Ablation Study]()
+   
 ## Network Architecture
 
 <center>
