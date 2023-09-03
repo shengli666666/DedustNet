@@ -9,8 +9,8 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
 * [Network Architecture](https://github.com/shengli666666/DedustNet#network-architecture)
 * [Dependencies and Installation](https://github.com/shengli666666/DedustNet#Dependencies-and-Installation)
 * [Datasets Preparation](https://github.com/shengli666666/DedustNet#Datasets-Preparation)
-    * [Real-world Dust Dataset (RB-Dust)](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset-(RB-Dust))
-    * [Real-world Fog Datasets (Dense-Haze, NH-Haze)](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets-(Dense-Haze,-NH-Haze))
+    * [Real world Dust Dataset (RB Dust)](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset-(RB-Dust))
+    * [Real world Fog Datasets (Dense Haze, NH Haze)](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets-(Dense-Haze,-NH-Haze))
 * [Quick Run](https://github.com/shengli666666/DedustNet#Quick-Run)
 * [Quantitative comparisons](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
     * [Comparison of objective indicators (PSNR, SSIM, NIQE, Entropy)](https://github.com/shengli666666/DedustNet#Comparison-of-objective-indicators-(PSNR,-SSIM,-NIQE,-Entropy))
@@ -41,11 +41,11 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
 * pytorch_wavelets
 ## Datasets Preparation
 
-### Real-world Dust Dataset:
+### Real world Dust Dataset:
 
 * Dataset: RB-Dust; Paper: [RB-Dust – A Reference-based Dataset for Vision-based Dust Removal](https://arxiv.org/pdf/2306.07244.pdf)(www.agriscapes-dataset.com)
 
-### Real-world Fog Datasets:
+### Real world Fog Datasets:
 
 * Dataset: DENSE; Paper: [Dense-Haze: a benchmark for image dehazing with dense-haze and haze-free images](https://arxiv.org/pdf/1904.02904.pdf)
 * Dataset: NHHAZE; Paper: [NTIRE 2020 NonHomogeneous Dehazing Challenge (2020)](https://competitions.codalab.org/competitions/22236) ; 
