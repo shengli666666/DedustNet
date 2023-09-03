@@ -1,15 +1,18 @@
 # DedustNet: A Frequency-dominated Swin Transformer-based network for Agricultural Dust Removal
 
----
+This is the official PyTorch codes for the paper:
+
+Zhiyong Tao$^{1}$, Shengli Zhang$^{1 \*}$, Sen Lin$^{3}$ (\**Corresponding author:zhangshengli\_win@163.com)
+{$^{1}$School of Electronics and Information Engineering, Liaoning Technical University, Huludao, China\\
+$^{2}$School of Automation and Electrical Engineering, Shenyang Ligong University, Shenyang, China
 
 >__Abstract:__ Dust has a significant impact on the environmental perception of automated agricultural machines, and dust removal methods using deep learning approaches still need to be further improved and refined. In this paper, a trainable end-to-end learning network (DedustNet) is specifically proposed to solve the real-world dust removal task. Specially, the frequency-dominated Swin Transformer-based block (DWT-Transformer Block) is proposed to address the limitation of the global receptive field and global information when facing complex dusty background. The Cross-level Information Fusion Module is presented to solve the loss of texture details and color brought by image enhancement algorithms to the processing results. DedustNet trades off the model complexity and the network's dust removal performance with 1.866M, both qualitative and quantitative results show that DedustNet outperforms state-of-the-art methods on reference and non-reference metrics.
 
 * [Network Architecture]()
-* [Citation]()
-    * [Dependencies and Installation]()
-    * [Datasets Preparation]()
-        * [Real-world Dust Dataset (RB-Dust)]()
-        * [Real-world Fog Datasets (Dense-Haze, NH-Haze)]()
+* [Dependencies and Installation]()
+* [Datasets Preparation]()
+    * [Real-world Dust Dataset (RB-Dust)]()
+    * [Real-world Fog Datasets (Dense-Haze, NH-Haze)]()
 * [Quick Run]()
 * [Quantitative comparisons]()
     * [Comparison of objective indicators (PSNR, SSIM, NIQE, Entropy)]
@@ -17,9 +20,9 @@
 * [Qualitative Comparisons]()
     * [RB-Dust datasets]()
     * [Dense-Haze]()
-    * [NH-Haze]()
-  
+    * [NH-Haze]()  
 * [Ablation Study]()
+* [Citation]()
    
 ## Network Architecture
 
@@ -30,10 +33,7 @@
 |<img src="images/dwt.png">|<img src="images/cifm.png">|
 |:-:|:-:|
 
-## Citation
-
-
-### Dependencies and Installation
+## Dependencies and Installation
 
 * python3.9
 * PyTorch>=1.0
@@ -41,13 +41,13 @@
 * numpy
 * matplotlib
 * pytorch_wavelets
-### Datasets Preparation
+## Datasets Preparation
 
-#### Real-world Dust Dataset:
+### Real-world Dust Dataset:
 
 * Dataset: RB-Dust; Paper: [RB-Dust – A Reference-based Dataset for Vision-based Dust Removal](https://arxiv.org/pdf/2306.07244.pdf)(www.agriscapes-dataset.com)
 
-#### Real-world Fog Datasets:
+### Real-world Fog Datasets:
 
 * Dataset: DENSE; Paper: [Dense-Haze: a benchmark for image dehazing with dense-haze and haze-free images](https://arxiv.org/pdf/1904.02904.pdf)
 * Dataset: NHHAZE; Paper: [NTIRE 2020 NonHomogeneous Dehazing Challenge (2020)](https://competitions.codalab.org/competitions/22236) ; 
@@ -138,3 +138,5 @@ To verify the robustness and effectiveness of DedustNet, we have done extension 
 <center>
     <img src='images/ablationbig.png'>
 </center>
+
+## Citation
