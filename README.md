@@ -12,9 +12,9 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
     * [Real world Dust Dataset ](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset)
     * [Real world Fog Datasets](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets)
 * [Quick Run](https://github.com/shengli666666/DedustNet#Quick-Run)
-* [Quantitative comparisons](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
-    * [Comparison of objective indicators (PSNR, SSIM, NIQE, Entropy)](https://github.com/shengli666666/DedustNet#Comparison-of-objective-indicators-(PSNR,-SSIM,-NIQE,-Entropy))
-    * [Comparison of Overhead (#Param, #FLOPs, #Runtime)](https://github.com/shengli666666/DedustNet#Comparison-of-Overhead-(#Param,-#FLOPs,-#Runtime))
+* [Quantitative comparisons ()](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
+    * [Comparison of objective indicators](https://github.com/shengli666666/DedustNet#Comparison-of-objective-indicators)
+    * [Comparison of Overhead](https://github.com/shengli666666/DedustNet#Comparison-of-Overhead)
 * [Qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
     * [RB-Dust datasets](https://github.com/shengli666666/DedustNet#RB-Dust-datasets)
     * [Dense-Haze](https://github.com/shengli666666/DedustNet#Dense-Haze)
@@ -95,11 +95,15 @@ We have included some test images from the experimental results presented in our
 
 ## Quantitative comparisons
 
-Quantitative comparisons on computational efficiency among DedustNet and SOTA methods, where the floating-point operations and inference time are measured on RGB image with a resolution of 256 × 256.
+### Comparison of objective indicators
 
 <center>
     <img src='images/Quantitative comparisons.png'>
 </center>
+
+### Comparison of Overhead
+
+Quantitative comparisons on computational efficiency among DedustNet and SOTA methods, where the floating-point operations and inference time are measured on RGB image with a resolution of 256 × 256.
 
 Our method does not have a great advantage in inference time compared to SOTA methods, which is because three DWT and IDWT are used in our network, the process of wavelet transform takes a certain amount of time. However, our method outperforms the SOTS methods in quantitative evaluation metrics (PSNR, SSIM, Entropy, and NIQE) and qualitative comparisons on the RB-Dust dataset. Therefore, our proposed method has a great advantage in a comprehensive view of the number of network parameters, model complexity, and overall network performance.
 
