@@ -6,21 +6,21 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
 
 >__Abstract:__ Dust has a significant impact on the environmental perception of automated agricultural machines, and dust removal methods using deep learning approaches still need to be further improved and refined. In this paper, a trainable end-to-end learning network (DedustNet) is specifically proposed to solve the real-world dust removal task. Specially, the frequency-dominated Swin Transformer-based block (DWT-Transformer Block) is proposed to address the limitation of the global receptive field and global information when facing complex dusty background. The Cross-level Information Fusion Module is presented to solve the loss of texture details and color brought by image enhancement algorithms to the processing results. DedustNet trades off the model complexity and the network's dust removal performance with 1.866M, both qualitative and quantitative results show that DedustNet outperforms state-of-the-art methods on reference and non-reference metrics.
 
-* [Network Architecture]()
-* [Dependencies and Installation]()
-* [Datasets Preparation]()
-    * [Real-world Dust Dataset (RB-Dust)]()
-    * [Real-world Fog Datasets (Dense-Haze, NH-Haze)]()
-* [Quick Run]()
-* [Quantitative comparisons]()
-    * [Comparison of objective indicators (PSNR, SSIM, NIQE, Entropy)]
-    * [Comparison of Overhead (#Param, #FLOPs, #Runtime)]
-* [Qualitative Comparisons]()
-    * [RB-Dust datasets]()
-    * [Dense-Haze]()
-    * [NH-Haze]()  
-* [Ablation Study]()
-* [Citation]()
+* [Network Architecture](https://github.com/shengli666666/DedustNet#network-architecture)
+* [Dependencies and Installation](https://github.com/shengli666666/DedustNet#Dependencies-and-Installation)
+* [Datasets Preparation](https://github.com/shengli666666/DedustNet#Datasets-Preparation)
+    * [Real-world Dust Dataset (RB-Dust)](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset-(RB-Dust))
+    * [Real-world Fog Datasets (Dense-Haze, NH-Haze)](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets-(Dense-Haze,-NH-Haze))
+* [Quick Run](https://github.com/shengli666666/DedustNet#Quick-Run)
+* [Quantitative comparisons](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
+    * [Comparison of objective indicators (PSNR, SSIM, NIQE, Entropy)](https://github.com/shengli666666/DedustNet#Comparison-of-objective-indicators-(PSNR,-SSIM,-NIQE,-Entropy))
+    * [Comparison of Overhead (#Param, #FLOPs, #Runtime)](https://github.com/shengli666666/DedustNet#Comparison-of-Overhead-(#Param,-#FLOPs,-#Runtime))
+* [Qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
+    * [RB-Dust datasets](https://github.com/shengli666666/DedustNet#RB-Dust-datasets)
+    * [Dense-Haze](https://github.com/shengli666666/DedustNet#Dense-Haze)
+    * [NH-Haze](https://github.com/shengli666666/DedustNet#NH-Haze)  
+* [Ablation Study](https://github.com/shengli666666/DedustNet#Ablation-Study)
+* [Citation](https://github.com/shengli666666/DedustNet#Citation)
    
 ## Network Architecture
 
@@ -138,3 +138,5 @@ To verify the robustness and effectiveness of DedustNet, we have done extension 
 </center>
 
 ## Citation
+
+Thank you very much for your valuable suggestions for our work, if you have other questions, very much look forward to your contact with us, Corresponding author's email： zhangshengli_win@163.com, your comments will make our work better!
