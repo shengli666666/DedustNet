@@ -25,10 +25,10 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
 ## Network Architecture
 
 <center>
-    <img src='images/network.png'>
+    <img src='network/networknew.png'>
 </center>
 
-|<img src="images/dwt.png">|<img src="images/cifm.png">|
+|<img src="network/dwtnew.png">|<img src="network/cifmnew.png">|
 |:-:|:-:|
 
 ## Dependencies and Installation
