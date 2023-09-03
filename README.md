@@ -110,7 +110,7 @@ Our method does not have a great advantage in inference time compared to SOTA me
 ### RB-Dust datasets
 
 <center>
-    <img src='images/dustbig.png'>
+    <img src='images/dustall.png'>
 </center>
 
 |<img src=".\images\dust1.gif">|<img src=".\images\dust2.gif">|<img src=".\images\dust3.gif">|
