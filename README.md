@@ -9,8 +9,8 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
 * [Network Architecture](https://github.com/shengli666666/DedustNet#network-architecture)
 * [Dependencies and Installation](https://github.com/shengli666666/DedustNet#Dependencies-and-Installation)
 * [Datasets Preparation](https://github.com/shengli666666/DedustNet#Datasets-Preparation)
-    * [Real world RB Dust Dataset ](https://github.com/shengli666666/DedustNet#Real-world-RB-Dust-Dataset)
-    * [Real world Fog Dense Haze and NH Haze Datasets](https://github.com/shengli666666/DedustNet#Real-world-Fog-Dense-Haze-and-NH-Haze-Datasets)
+    * [Real world Dust Dataset ](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset)
+    * [Real world Fog Datasets](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets)
 * [Quick Run](https://github.com/shengli666666/DedustNet#Quick-Run)
 * [Quantitative comparisons](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
     * [Comparison of objective indicators (PSNR, SSIM, NIQE, Entropy)](https://github.com/shengli666666/DedustNet#Comparison-of-objective-indicators-(PSNR,-SSIM,-NIQE,-Entropy))
@@ -47,8 +47,8 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
 
 ### Real world Fog Datasets:
 
-* Dataset: DENSE; Paper: [Dense-Haze: a benchmark for image dehazing with dense-haze and haze-free images](https://arxiv.org/pdf/1904.02904.pdf)
-* Dataset: NHHAZE; Paper: [NTIRE 2020 NonHomogeneous Dehazing Challenge (2020)](https://competitions.codalab.org/competitions/22236)
+* Dataset: Dense-Haze; Paper: [Dense-Haze: a benchmark for image dehazing with dense-haze and haze-free images](https://arxiv.org/pdf/1904.02904.pdf)
+* Dataset: NH-HAZE; Paper: [NTIRE 2020 NonHomogeneous Dehazing Challenge (2020)](https://competitions.codalab.org/competitions/22236)
 <details>
 <summary> FILE STRUCTURE (click to expand) </summary>
 
