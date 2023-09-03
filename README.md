@@ -2,9 +2,7 @@
 
 This is the official PyTorch codes for the paper:
 
-Zhiyong Tao$^{1}$, Shengli Zhang$^{1 \*}$, Sen Lin$^{3}$ (\**Corresponding author:zhangshengli\_win@163.com)
-{$^{1}$School of Electronics and Information Engineering, Liaoning Technical University, Huludao, China\\
-$^{2}$School of Automation and Electrical Engineering, Shenyang Ligong University, Shenyang, China
+Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@zhangshengli\_win@163.com)
 
 >__Abstract:__ Dust has a significant impact on the environmental perception of automated agricultural machines, and dust removal methods using deep learning approaches still need to be further improved and refined. In this paper, a trainable end-to-end learning network (DedustNet) is specifically proposed to solve the real-world dust removal task. Specially, the frequency-dominated Swin Transformer-based block (DWT-Transformer Block) is proposed to address the limitation of the global receptive field and global information when facing complex dusty background. The Cross-level Information Fusion Module is presented to solve the loss of texture details and color brought by image enhancement algorithms to the processing results. DedustNet trades off the model complexity and the network's dust removal performance with 1.866M, both qualitative and quantitative results show that DedustNet outperforms state-of-the-art methods on reference and non-reference metrics.
 
