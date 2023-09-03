@@ -37,12 +37,6 @@ DedustNet consists of encoding and decoding two processes. The encoding consists
 |<img src="network/dwtnew.png">|<img src="network/cifmnew.png">|
 |:-:|:-:|
 
-DWT-Former Block mainly uses DWT to convert spatial domain information into wavelet domain and then put them into the Swin Transformer with SFAS for global processing. We can observe from Fig.3 that the dusty image is first decomposed into four frequency bands (\$I_{{\rm LL}}$,$I_{{\rm LH}}$,$I_{{\rm HL}}\$ and $I_{{\rm HH}}$) by DWT, then the output feature $I_{{\rm DWT}_{\rm out}}$ is input into Swin Transformer for feature processing, at the same time, the convolution-operated $I_{{\rm DWT}_{\rm out}}$ is concatenated with the output of Multi-Head Self-Attention (MHSA)~\cite{7}. Finally, the results obtained from the two operations are summed up as the output $I_{{\rm DWT-Former}_{\rm out}}$.
-
-We introduce the SFAS in the Swin Transformer Block. Specifically, we perform an additional convolution of the features $I_{\rm output}$ from the DWT, DWT-Former Block achieves a dynamic aggregation style of information with the production of MHSA in the spatial dimension.
-
-We use Multi-Head Cross-Attention (MHCA) in CIFM Moudle to interoperate the information of the encoding and decoding stages, and propose the Cross-level Information Fusion Module (CIFM) to fuse different levels of features, recovering rich texture details and information.
-
 ## Dependencies and Installation
 
 * python3.9
