@@ -48,7 +48,7 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
 ### Real world Fog Datasets:
 
 * Dataset: DENSE; Paper: [Dense-Haze: a benchmark for image dehazing with dense-haze and haze-free images](https://arxiv.org/pdf/1904.02904.pdf)
-* Dataset: NHHAZE; Paper: [NTIRE 2020 NonHomogeneous Dehazing Challenge (2020)](https://competitions.codalab.org/competitions/22236) ; 
+* Dataset: NHHAZE; Paper: [NTIRE 2020 NonHomogeneous Dehazing Challenge (2020)](https://competitions.codalab.org/competitions/22236)
 <details>
 <summary> FILE STRUCTURE (click to expand) </summary>
 
