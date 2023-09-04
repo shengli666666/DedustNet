@@ -37,6 +37,10 @@ DedustNet consists of encoding and decoding two processes. The encoding consists
 |<img src="network/dwtnew.png">|<img src="network/cifmnew.png">|
 |:-:|:-:|
 
+We devise DWT-Former Block, combining the advantages of Discrete Wavelet Transform (DWT) and Swin Transformer with Spatial Features Aggregation Scheme (SFAS) to enhance the global receptive field with complex hazy backgrounds.
+
+We propose the Cross-level Information Fusion Module (CIFM) to fuse different levels of features, recovering rich texture details and information.
+
 ## Dependencies and Installation
 
 * python3.9
