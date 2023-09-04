@@ -32,13 +32,13 @@ dataset=opt.task
 img_dir = abs + opt.test_imgs +'/'  
 
 ####please change the dehaze results output_dir 
-output_dir = abs + f'pred_DwtFormer_dust/'
+output_dir = abs + f'**/'
 print("pred_dir:",output_dir)
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
 
 ####please change your trained_model path 
-model_dir='./trained_models/'+f'**.pk'
+model_dir='./trained_models/'+f'dust_dwtformer.pk'
 
 device='cuda' if torch.cuda.is_available() else 'cpu'
 ckp=torch.load(model_dir,map_location=device)
