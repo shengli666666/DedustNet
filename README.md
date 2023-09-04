@@ -82,7 +82,7 @@ DedustNet consists of encoding and decoding two processes. The encoding consists
 
 ## Quick Run
 
-Trained_models are available at [google drive]() .
+Trained_models are available at [google drive](https://drive.google.com/drive/my-drive?hl=zh-cn) .
 
 *Put  models in the `./trained_models/` folder.*
 
