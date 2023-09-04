@@ -95,8 +95,9 @@ Here is an example to perform Dust:
 ```shell
 python test.py --task dust --input_dir dataset/dusttest/dusty
 ```
-We have included some test images from the experimental results presented in our paper at `./image file/` folder. 
-* `overhead.py` is a file where you can test network model's parameters (Params), multiply-accumulate operations (MACs), floating-point operations (FLOPs) and inference time.
+`overhead.py` is a file where you can test network model's parameters (Params), multiply-accumulate operations (MACs), floating-point operations (FLOPs) and inference time.
+
+We will publish the training code after the confirmation of acceptance, thank you for your understanding!
 
 ## Quantitative comparisons
 
