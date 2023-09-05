@@ -133,7 +133,7 @@ __The uploaded images are high quality and slow to refresh, thank you very much 
 To verify the robustness and effectiveness of DedustNet, we have done extension experiments in fog removal, and as can be seen in Fig.6, DedustNet also achieves satisfactory results in fog removal compared to SOTA methods, demonstrating the robustness and generalization ability of DedustNet.
 
 <center>
-    <img src='images/dehaze.png'>
+    <img src='images/haze.png'>
 </center>
 
 #### Dense-Haze
