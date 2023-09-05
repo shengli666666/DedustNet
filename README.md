@@ -148,7 +148,7 @@ To verify the robustness and effectiveness of DedustNet, we have done extension 
 ## Ablation Study
 
 <center>
-    <img src='images/ablation.png'>
+    <img src='images/abalation.png'>
 </center>
 
 ## Citation
