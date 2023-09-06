@@ -108,7 +108,7 @@ We will publish the training code after the confirmation of acceptance, thank yo
 ### Comparison of objective indicators
 
 <center>
-    <img src='images/Quantitative comparisons.png'>
+    <img src='images/result.png'>
 </center>
 
 ### Comparison of Overhead
@@ -124,7 +124,7 @@ __The uploaded images are high quality and slow to refresh, thank you very much 
 ### RB-Dust datasets
 
 <center>
-    <img src='images/dustall.png'>
+    <img src='images/dust.png'>
 </center>
 
 |<img src=".\images\dust1.gif">|<img src=".\images\dust2.gif">|<img src=".\images\dust3.gif">|
