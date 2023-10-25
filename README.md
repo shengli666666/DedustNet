@@ -86,7 +86,7 @@ We propose the Cross-level Information Fusion Module (CIFM) to fuse different le
 
 ## Quick Run
 
-Trained_models are available at [google drive](https://drive.google.com/drive/my-drive?hl=zh-cn) .
+Trained_models are available at [google drive](https://drive.google.com/drive/folders/1g6X7wYV_yILRqYx7GoUuhW4CSJXiPnCZ?hl=zh-cn) .
 
 *Put  models in the `./trained_models/` folder.*
 
