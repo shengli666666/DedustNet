@@ -92,6 +92,8 @@ Before you start your experiment, please follow the [instructions](https://www.c
 
 Trained_models are available at [google drive](https://drive.google.com/drive/folders/1g6X7wYV_yILRqYx7GoUuhW4CSJXiPnCZ?hl=zh-cn) .
 
+For your quick run, we have selected a small number of dusty images in the `./datasets/dusty` folder
+
 *Put  models in the `./trained_models/` folder.*
 
 To test the pre-trained models of Dust, Dense-Haze, and NHHaze on your own images, run:
@@ -105,15 +107,15 @@ python test.py --task dust --input_dir dataset/dusty
 ```
 *Check out the test results in the `./dedustresult` folder.*
 
-`overhead.py` is a file where you can test network model's parameters (Params), multiply-accumulate operations (MACs), floating-point operations (FLOPs) and inference time.
+`overhead.py` is a file where you can test a network model's parameters (Params), multiply-accumulate operations (MACs), floating-point operations (FLOPs) and inference time.
 
-We will publish the training code after the confirmation of acceptance, thank you for your understanding!
+We will publish the training code after confirmation of acceptance. Thank you for your understanding!
 
 ## Quantitative comparisons
 
-We have uploaded the MATLAB versions of the three reference-free indicators (NIQE.py, Entropy.py) used in our papaer at `./metrics/` folder.
+We have uploaded the MATLAB versions of the three reference-free indicators (**`NIQE.m`**, **`Entropy.m`**) used in our papaer at `./metrics/` folder.
 
-A higher Entropy score indicates that the image presents more detail, a lower NIQE score indicates better image quality.
+A higher Entropy score indicates that the image presents more detail; a lower NIQE score indicates better image quality.
 
 ### Comparison of objective indicators
 
@@ -123,9 +125,9 @@ A higher Entropy score indicates that the image presents more detail, a lower NI
 
 ### Comparison of Overhead
 
-Quantitative comparisons on computational efficiency among DedustNet and SOTA methods, where the floating-point operations and inference time are measured on RGB image with a resolution of 256 × 256.
+Quantitative comparisons on computational efficiency among DedustNet and SOTA methods, where the floating-point operations and inference time are measured on an RGB image with a resolution of 256 × 256
 
-Our method does not have a great advantage in inference time compared to SOTA methods, which is because three DWT and IDWT are used in our network, the process of wavelet transform takes a certain amount of time. However, our method outperforms the SOTS methods in quantitative evaluation metrics (PSNR, SSIM, Entropy, and NIQE) and qualitative comparisons on the RB-Dust dataset. Therefore, our proposed method has a great advantage in a comprehensive view of the number of network parameters, model complexity, and overall network performance.
+Our method does not have a great advantage in inference time compared to SOTA methods, which is because when three DWT and IDWT are used in our network, the process of wavelet transform takes a certain amount of time. However, our method outperforms the SOTS methods in quantitative evaluation metrics (PSNR, SSIM, Entropy, and NIQE) and qualitative comparisons on the RB-Dust dataset. Therefore, our proposed method has a great advantage in terms of a comprehensive view of the number of network parameters, model complexity, and overall network performance.
 
 ## Qualitative comparisons
 
