@@ -2,9 +2,9 @@
 
 Author Information:
 
-Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@zhangshengli\_win@163.com)
+Zhiyong Tao, Shengli Zhang, and Sen Lin (Corresponding author: Shengli Zhang, email: email@zhangshengli\_win@163.com)
 
->__Abstract:__ Dust has a significant impact on the environmental perception of automated agricultural machines, and dust removal methods using deep learning approaches still need to be further improved and refined. In this paper, a trainable end-to-end learning network (DedustNet) is specifically proposed to solve the real-world dust removal task. Specially, the frequency-dominated Swin Transformer-based block (DWT-Transformer Block) is proposed to address the limitation of the global receptive field and global information when facing complex dusty background. The Cross-level Information Fusion Module is presented to solve the loss of texture details and color brought by image enhancement algorithms to the processing results. DedustNet trades off the model complexity and the network's dust removal performance with 1.866M, both qualitative and quantitative results show that DedustNet outperforms state-of-the-art methods on reference and non-reference metrics.
+>__Abstract:__ Dust has a significant impact on the environmental perception of automated agricultural machines, and dust removal methods using deep learning approaches still need to be further improved and refined. In this paper, a trainable end-to-end learning network (DedustNet) is specifically proposed to solve the real-world dust removal task. Specially, the frequency-dominated Swin Transformer-based block (DWT-Transformer Block) is proposed to address the limitations of the global receptive field and global information when facing complex dusty backgrounds. The Cross-level Information Fusion Module is presented to solve the loss of texture details and color brought by image enhancement algorithms to the processing results. DedustNet trades off the model complexity and the network's dust removal performance with 1.866M. Both qualitative and quantitative results show that DedustNet outperforms state-of-the-art methods on reference and non-reference metrics.
 
 * [Network Architecture](https://github.com/shengli666666/DedustNet#network-architecture)
 * [Dependencies and Installation](https://github.com/shengli666666/DedustNet#Dependencies-and-Installation)
@@ -24,13 +24,15 @@ Zhiyong Tao, Shengli Zhang, Sen Lin (Corresponding author: Shengli Zhang  email@
    
 ## Network Architecture
 
+As we have uploaded a lot of pictures, the page may refresh slowly. Thank you very much for your patience!
+
 ### DedustNet Network
 
 <center>
     <img src='network/networknew.png'>
 </center>
 
-DedustNet consists of encoding and decoding two processes. The encoding consists of two DWT-Former Blocks, including a step of downsampling using DWT and a Swin Transformer Block with Spatial Features Aggregation Scheme (SFAS). We propose the DWT-Former Block incorporates Cross-level Information Fusion Module (CIFM) to fuse different levels of information in the encoding and decoding stages, Dilated Convolution Module (DCM) with different expansion rates (rate=3, 6, 9) is adopted to serve as the interface between the two stages to complete the feature interaction in different receptive domains.
+DedustNet consists of two encoding and decoding processes. The encoding consists of two DWT-Former Blocks, including a step of downsampling using DWT and a Swin Transformer Block with Spatial Features Aggregation Scheme (SFAS). We propose that the DWT-Former Block incorporates the Cross-level Information Fusion Module (CIFM) to fuse different levels of information in the encoding and decoding stages. A Dilated Convolution Module (DCM) with different expansion rates (rate = 3, 6, and 9) is adopted to serve as the interface between the two stages to complete the feature interaction in different receptive domains.
 
 ### DWT-Former Block and CIFM Moudle
 
@@ -86,6 +88,8 @@ We propose the Cross-level Information Fusion Module (CIFM) to fuse different le
 
 ## Quick Run
 
+Before you start your experiment, please follow the [instructions](https://www.cnblogs.com/wanghui-garcia/p/12526298.html) to install pytorch-wavelets.
+
 Trained_models are available at [google drive](https://drive.google.com/drive/folders/1g6X7wYV_yILRqYx7GoUuhW4CSJXiPnCZ?hl=zh-cn) .
 
 *Put  models in the `./trained_models/` folder.*
@@ -97,13 +101,19 @@ python test.py --task Task_Name --input_dir path_to_images
 Here is an example to perform Dust:
 
 ```shell
-python test.py --task dust --input_dir dataset/dusttest/dusty
+python test.py --task dust --input_dir dataset/dusty
 ```
+*Check out the test results in the `./dedustresult` folder.*
+
 `overhead.py` is a file where you can test network model's parameters (Params), multiply-accumulate operations (MACs), floating-point operations (FLOPs) and inference time.
 
 We will publish the training code after the confirmation of acceptance, thank you for your understanding!
 
 ## Quantitative comparisons
+
+We have uploaded the MATLAB versions of the three reference-free indicators (NIQE.py, Entropy.py) used in our papaer at `./metrics/` folder.
+
+A higher Entropy score indicates that the image presents more detail, a lower NIQE score indicates better image quality.
 
 ### Comparison of objective indicators
 
