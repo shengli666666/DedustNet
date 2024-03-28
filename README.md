@@ -20,9 +20,12 @@ Shengli Zhang, Zhiyong Tao, and Sen Lin (Corresponding author: Zhiyong Tao; Firs
 * [Qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
     * [RB-Dust datasets](https://github.com/shengli666666/DedustNet#RB-Dust-datasets)
     * [Real world hazy datasets](https://github.com/shengli666666/DedustNet#Real-world-hazy-datasets)
-* [Application test]()
-    * [Keypoint matching detection]()
-    * [Image edge extraction]()
+* [Application test](https://github.com/shengli666666/DedustNet#application-test
+)
+    * [Keypoint matching detection](https://github.com/shengli666666/DedustNet#keypoint-matching-detection
+)
+    * [Image edge extraction](https://github.com/shengli666666/DedustNet#image-edge-extraction
+)
 * [Ablation Study](https://github.com/shengli666666/DedustNet#Ablation-Study)
 * [Citation](https://github.com/shengli666666/DedustNet#Citation)
    
