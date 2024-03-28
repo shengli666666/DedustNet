@@ -42,7 +42,11 @@ Furthermore, we combine a cross-level information fusion module (CIFM) to integr
 
 ### DWT-Former Block and CIFM Moudle
 
-|<img src="image/dwt.png">|<img src="image/cifm.png">|
+<center>
+    <img src='image/dwt.png'>
+</center>
+
+|<img src="image/cifm.png">|<img src="image/dcm.png">|
 |:-:|:-:|
 
 ## Dependencies and Installation
