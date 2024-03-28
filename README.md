@@ -2,9 +2,10 @@
 
 Author Information:
 
-Shengli Zhang, Zhiyong Tao, and Sen Lin (Corresponding author: Zhiyong Tao, first author: Shengli Zhang email@zhangshengli\_win@163.com)
+Shengli Zhang, Zhiyong Tao, and Sen Lin (Corresponding author: Zhiyong Tao; First author: Shengli Zhang email@zhangshengli\_win@163.com)
 
 >__Abstract:__ While dust significantly affects the environmental perception of automated agricultural machines, it still needs to be explored, and the existing deep learning-based methods for dust removal require further refinement and development. Further research and improvement in this area are essential to improve the performance and reliability of automated agricultural machines in dusty environments. As a solution, we propose an end-to-end trainable learning network (DedustNet) to solve the real-world agricultural dust removal task. To our knowledge, DedustNet is the first time Swin Transformer-based units have been used in wavelet networks for agricultural image dusting. Specifically, we present the frequency-dominated Swin Transformer-based block (DWTFormer block and IDWTFormer block) with the wavelet transform. As the basic blocks of the encoding and decoding, the DWTFormer block and IDWTFormer block recover richer details, such as the structure and texture of the image, alleviating the limitation of the global receptive field of Swin Transformer when dealing with complex dusty backgrounds.
+>
 Furthermore, We propose a cross-level information fusion module (CIFM) to fuse different levels of features and effectively capture global and long-range feature relationships. In addition, we present a dilated convolution module (DCM) to capture contextual information guided by wavelet transform at multiple scales, which combines the advantages of wavelet transform and dilated convolution. Our algorithm leverages deep learning techniques to effectively remove dust from images captured in real-world agricultural settings while preserving the original structural and textural features. Compared to existing state-of-the-art methods, DedustNet achieves superior performance and more reliable results in agricultural image dedusting, providing strong support for the application of agricultural machinery in dusty environments. Additionally, the impressive performance on real-world hazy datasets and application tests highlights DedustNet's superior generalization ability and computer vision-related application performance compared to state-of-the-art methods.
 
 * [Network Architecture](https://github.com/shengli666666/DedustNet#network-architecture)
@@ -18,8 +19,10 @@ Furthermore, We propose a cross-level information fusion module (CIFM) to fuse d
     * [Comparison of Overhead](https://github.com/shengli666666/DedustNet#Comparison-of-Overhead)
 * [Qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
     * [RB-Dust datasets](https://github.com/shengli666666/DedustNet#RB-Dust-datasets)
-    * [Dense-Haze](https://github.com/shengli666666/DedustNet#Dense-Haze)
-    * [NH-Haze](https://github.com/shengli666666/DedustNet#NH-Haze)  
+    * [Real world hazy datasets](https://github.com/shengli666666/DedustNet#Real-world-hazy-datasets)
+* [Application test]()
+    * [Keypoint matching detection]()
+    * [Image edge extraction]()
 * [Ablation Study](https://github.com/shengli666666/DedustNet#Ablation-Study)
 * [Citation](https://github.com/shengli666666/DedustNet#Citation)
    
@@ -30,19 +33,17 @@ As we have uploaded a lot of pictures, the page may refresh slowly. Thank you ve
 ### DedustNet Network
 
 <center>
-    <img src='network/networknew.png'>
+    <img src='image/network.png'>
 </center>
 
-DedustNet consists of two encoding and decoding processes. The encoding consists of two DWT-Former Blocks, including a step of downsampling using DWT and a Swin Transformer Block with Spatial Features Aggregation Scheme (SFAS). We propose that the DWT-Former Block incorporates the Cross-level Information Fusion Module (CIFM) to fuse different levels of information in the encoding and decoding stages. A Dilated Convolution Module (DCM) with different expansion rates (rate = 3, 6, and 9) is adopted to serve as the interface between the two stages to complete the feature interaction in different receptive domains.
+DedustNet consists of two encoding and decoding processes. The encoding and decoding of DedustNet are based on the DWTFormer and IDWTFormer blocks. Although the DWT-Former block as the base block of the network mainly combines wavelet transform and Swin Transformer, we do not directly apply these existing tools but improve them. We use the wavelet transform to transform the features to the frequency domain and use the frequency information to guide DedustNet to recover the structural and texture details of the image. 
+
+Furthermore, we combine a cross-level information fusion module (CIFM) to integrate information from two different encoding and decoding stages, which can effectively capture global self-similarity and long-range feature relationships. To connect encoding and decoding, we propose the dilated convolution module (DCM) that serves as an interface between the two stages to complete the feature interaction in different receptive fields.
 
 ### DWT-Former Block and CIFM Moudle
 
-|<img src="network/dwtnew.png">|<img src="network/cifmnew.png">|
+|<img src="image/dwt.png">|<img src="image/cifm.png">|
 |:-:|:-:|
-
-We devise DWT-Former Block, combining the advantages of Discrete Wavelet Transform (DWT) and Swin Transformer with Spatial Features Aggregation Scheme (SFAS) to enhance the global receptive field with complex hazy backgrounds.
-
-We propose the Cross-level Information Fusion Module (CIFM) to fuse different levels of features, recovering rich texture details and information.
 
 ## Dependencies and Installation
 
@@ -129,6 +130,10 @@ A higher Entropy score indicates that the image presents more detail; a lower NI
 
 Quantitative comparisons on computational efficiency among DedustNet and SOTA methods, where the floating-point operations and inference time are measured on an RGB image with a resolution of 256 × 256
 
+<center>
+    <img src='images/overhead.png'>
+</center>
+
 Our method does not have a great advantage in inference time compared to SOTA methods, which is because when three DWT and IDWT are used in our network, the process of wavelet transform takes a certain amount of time. However, our method outperforms the SOTS methods in quantitative evaluation metrics (PSNR, SSIM, Entropy, and NIQE) and qualitative comparisons on the RB-Dust dataset. Therefore, our proposed method has a great advantage in terms of a comprehensive view of the number of network parameters, model complexity, and overall network performance.
 
 ## Qualitative comparisons
@@ -138,34 +143,53 @@ __The uploaded images are high quality and slow to refresh, thank you very much 
 ### RB-Dust datasets
 
 <center>
-    <img src='images/dust.png'>
+    <img src='images/dedusted.png'>
 </center>
 
 |<img src=".\images\dust1.gif">|<img src=".\images\dust2.gif">|<img src=".\images\dust3.gif">|
 |:-:|:-:|:-:|
 
+### Real world hazy datasets
+
 To verify the robustness and effectiveness of DedustNet, we have done extension experiments in fog removal, and as can be seen in Fig.6, DedustNet also achieves satisfactory results in fog removal compared to SOTA methods, demonstrating the robustness and generalization ability of DedustNet.
 
 <center>
-    <img src='images/haze.png'>
+    <img src='images/ihaze.png'>
+</center>
+<center>
+    <img src='images/ohaze.png'>
+</center>
+<center>
+    <img src='images/nhhaze.png'>
+</center>
+<center>
+    <img src='images/densehaze.png'>
 </center>
 
-#### Dense-Haze
+## Application test
 
-|<img src=".\images\dense1.gif">|<img src=".\images\dense4.gif">|<img src=".\images\dense5.gif">|
-|:-:|:-:|:-:|
+To more fully validate the potential performance of our method on other vision tasks, we performed keypoint matching detection and image edge detection.
 
+### Keypoint matching detection
 
-#### NH-Haze
+<center>
+    <img src='images/sift.png'>
+</center>
 
-|<img src=".\images\nh3.gif">|<img src=".\images\nh6.gif">|<img src=".\images\nh8.gif">|
-|:-:|:-:|:-:|
+### Image edge extraction
+
+<center>
+    <img src='images/candy.png'>
+</center>
 
 ## Ablation Study
 
 <center>
-    <img src='images/abalation.png'>
+    <img src='images/ablation.png'>
 </center>
+
+|<img src="network/ablation1.png">|<img src="network/ablation2.png">|
+|:-:|:-:|
 
 ## Citation
 
