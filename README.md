@@ -127,7 +127,7 @@ A higher Entropy score indicates that the image presents more detail; a lower NI
 ### Comparison of objective indicators
 
 <center>
-    <img src='images/result.png'>
+    <img src='image/result.png'>
 </center>
 
 ### Comparison of Overhead
@@ -135,7 +135,7 @@ A higher Entropy score indicates that the image presents more detail; a lower NI
 Quantitative comparisons on computational efficiency among DedustNet and SOTA methods, where the floating-point operations and inference time are measured on an RGB image with a resolution of 256 × 256
 
 <center>
-    <img src='images/overhead.png'>
+    <img src='image/overhead.png'>
 </center>
 
 Our method does not have a great advantage in inference time compared to SOTA methods, which is because when three DWT and IDWT are used in our network, the process of wavelet transform takes a certain amount of time. However, our method outperforms the SOTS methods in quantitative evaluation metrics (PSNR, SSIM, Entropy, and NIQE) and qualitative comparisons on the RB-Dust dataset. Therefore, our proposed method has a great advantage in terms of a comprehensive view of the number of network parameters, model complexity, and overall network performance.
@@ -147,10 +147,10 @@ __The uploaded images are high quality and slow to refresh, thank you very much 
 ### RB-Dust datasets
 
 <center>
-    <img src='images/dedusted.png'>
+    <img src='image/dedusted.png'>
 </center>
 
-|<img src=".\images\dust1.gif">|<img src=".\images\dust2.gif">|<img src=".\images\dust3.gif">|
+|<img src=".\image\dust1.gif">|<img src=".\image\dust2.gif">|<img src=".\image\dust3.gif">|
 |:-:|:-:|:-:|
 
 ### Real world hazy datasets
@@ -158,16 +158,7 @@ __The uploaded images are high quality and slow to refresh, thank you very much 
 To verify the robustness and effectiveness of DedustNet, we have done extension experiments in fog removal, and as can be seen in Fig.6, DedustNet also achieves satisfactory results in fog removal compared to SOTA methods, demonstrating the robustness and generalization ability of DedustNet.
 
 <center>
-    <img src='images/ihaze.png'>
-</center>
-<center>
-    <img src='images/ohaze.png'>
-</center>
-<center>
-    <img src='images/nhhaze.png'>
-</center>
-<center>
-    <img src='images/densehaze.png'>
+    <img src='image/dehazed.png'>
 </center>
 
 ## Application test
@@ -177,23 +168,24 @@ To more fully validate the potential performance of our method on other vision t
 ### Keypoint matching detection
 
 <center>
-    <img src='images/sift.png'>
+    <img src='image/sift.png'>
 </center>
 
 ### Image edge extraction
 
 <center>
-    <img src='images/candy.png'>
+    <img src='image/candy.png'>
 </center>
 
 ## Ablation Study
 
 <center>
-    <img src='images/ablation.png'>
+    <img src='image/ablationfig.png'>
 </center>
 
-|<img src="network/ablation1.png">|<img src="network/ablation2.png">|
-|:-:|:-:|
+<center>
+    <img src='image/ablation.png'>
+</center>
 
 ## Citation
 
