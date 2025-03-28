@@ -16,17 +16,11 @@ Compared with those of existing state-of-the-art methods, DedustNet achieves sup
     * [Real world Dust Dataset ](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset)
     * [Real world Fog Datasets](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets)
 * [Quick Run](https://github.com/shengli666666/DedustNet#Quick-Run)
-* [Quantitative comparisons](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
-* [Qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
+* [Quantitative and qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
     * [RB-Dust dataset](https://github.com/shengli666666/DedustNet#RB-Dust-dataset)
     * [SID dataset](https://github.com/shengli666666/DedustNet#SID-dataset)
     * [Real world hazy datasets](https://github.com/shengli666666/DedustNet#Real-world-hazy-datasets)
-* [Application test](https://github.com/shengli666666/DedustNet#application-test
-)
-    * [Keypoint matching detection](https://github.com/shengli666666/DedustNet#keypoint-matching-detection
-)
-    * [Image edge extraction](https://github.com/shengli666666/DedustNet#image-edge-extraction
-)
+* [Application test](https://github.com/shengli666666/DedustNet?tab=readme-ov-file#application-test)
 * [Citation](https://github.com/shengli666666/DedustNet#Citation)
    
 ## Network Architecture
