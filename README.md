@@ -140,16 +140,6 @@ A higher Entropy score indicates that the image presents more detail; a lower NI
     <img src='image/result.png'>
 </center>
 
-### Comparison of Overhead
-
-Quantitative comparisons on computational efficiency among DedustNet and SOTA methods, where the floating-point operations and inference time are measured on an RGB image with a resolution of 256 × 256
-
-<center>
-    <img src='image/overhead.png'>
-</center>
-
-Our method does not have a great advantage in inference time compared to SOTA methods, which is because when three DWT and IDWT are used in our network, the process of wavelet transform takes a certain amount of time. However, our method outperforms the SOTS methods in quantitative evaluation metrics (PSNR, SSIM, Entropy, and NIQE) and qualitative comparisons on the RB-Dust dataset. Therefore, our proposed method has a great advantage in terms of a comprehensive view of the number of network parameters, model complexity, and overall network performance.
-
 ## Qualitative comparisons
 
 __The uploaded images are high quality and slow to refresh, thank you very much for your patience!__
@@ -157,7 +147,21 @@ __The uploaded images are high quality and slow to refresh, thank you very much 
 ### RB-Dust datasets
 
 <center>
-    <img src='image/dedusted.png'>
+    <img src='image/rbdust.png'>
+</center>
+
+<center>
+    <img src='image/rbdustnew.png'>
+</center>
+
+### SID datasets
+
+<center>
+    <img src='image/sid.png'>
+</center>
+
+<center>
+    <img src='image/sidnew.png'>
 </center>
 
 |<img src=".\image\dust1.gif">|<img src=".\image\dust2.gif">|<img src=".\image\dust3.gif">|
@@ -168,7 +172,7 @@ __The uploaded images are high quality and slow to refresh, thank you very much 
 To verify the robustness and effectiveness of DedustNet, we have done extension experiments in fog removal, and as can be seen in Fig.6, DedustNet also achieves satisfactory results in fog removal compared to SOTA methods, demonstrating the robustness and generalization ability of DedustNet.
 
 <center>
-    <img src='image/dehazed.png'>
+    <img src='image/dehaze.png'>
 </center>
 
 ## Application test
@@ -184,17 +188,19 @@ To more fully validate the potential performance of our method on other vision t
 ### Image edge extraction
 
 <center>
-    <img src='image/candy.png'>
+    <img src='image/canny.png'>
 </center>
 
-## Ablation Study
+### Object detection (YOLOv8 detection algorithm)
 
 <center>
-    <img src='image/ablationfig.png'>
+    <img src='image/yolov8.png'>
 </center>
 
+### Salient object detection (PoolNet+ algorithm)
+
 <center>
-    <img src='image/ablation.png'>
+    <img src='image/salient.png'>
 </center>
 
 ## Citation
