@@ -16,7 +16,7 @@ Compared with those of existing state-of-the-art methods, DedustNet achieves sup
     * [Real world Dust Dataset ](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset)
     * [Real world Fog Datasets](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets)
 * [Quick Run](https://github.com/shengli666666/DedustNet#Quick-Run)
-* [Quantitative and qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
+* [Quantitative and Qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
     * [RB-Dust dataset](https://github.com/shengli666666/DedustNet#RB-Dust-dataset)
     * [SID dataset](https://github.com/shengli666666/DedustNet#SID-dataset)
     * [Real world hazy datasets](https://github.com/shengli666666/DedustNet#Real-world-hazy-datasets)
@@ -121,13 +121,9 @@ python test.py --task dust --input_dir dataset/dusty
 
 We will publish the training code after confirmation of acceptance. Thank you for your understanding!
 
-## Quantitative comparisons
-
 We have uploaded the MATLAB versions of the three reference-free indicators (**`NIQE.m`**, **`Entropy.m`**, and **`FADE.m`**) used in our papaer at `./metrics/` folder.
 
-A higher Entropy score indicates that the image presents more detail; a lower NIQE score indicates better image quality.
-
-### Comparison of objective indicators
+### Quantitative and Qualitative Comparisons
 
 <center>
     <img src='image/result.png'>
