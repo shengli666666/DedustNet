@@ -12,14 +12,14 @@ Compared with those of existing state-of-the-art methods, DedustNet achieves sup
 * [Network Architecture](https://github.com/shengli666666/DedustNet#network-architecture)
 * [Dependencies and Installation](https://github.com/shengli666666/DedustNet#Dependencies-and-Installation)
 * [Datasets Preparation](https://github.com/shengli666666/DedustNet#Datasets-Preparation)
+    * [Synthetic Dust Dataset ](https://github.com/shengli666666/DedustNet#Synthetic-Dust-Dataset)
     * [Real world Dust Dataset ](https://github.com/shengli666666/DedustNet#Real-world-Dust-Dataset)
     * [Real world Fog Datasets](https://github.com/shengli666666/DedustNet#Real-world-Fog-Datasets)
 * [Quick Run](https://github.com/shengli666666/DedustNet#Quick-Run)
 * [Quantitative comparisons](https://github.com/shengli666666/DedustNet#Quantitative-comparisons)
-    * [Comparison of objective indicators](https://github.com/shengli666666/DedustNet#Comparison-of-objective-indicators)
-    * [Comparison of Overhead](https://github.com/shengli666666/DedustNet#Comparison-of-Overhead)
 * [Qualitative Comparisons](https://github.com/shengli666666/DedustNet#Qualitative-Comparisons)
-    * [RB-Dust datasets](https://github.com/shengli666666/DedustNet#RB-Dust-datasets)
+    * [RB-Dust dataset](https://github.com/shengli666666/DedustNet#RB-Dust-dataset)
+    * [SID dataset](https://github.com/shengli666666/DedustNet#SID-dataset)
     * [Real world hazy datasets](https://github.com/shengli666666/DedustNet#Real-world-hazy-datasets)
 * [Application test](https://github.com/shengli666666/DedustNet#application-test
 )
@@ -27,7 +27,6 @@ Compared with those of existing state-of-the-art methods, DedustNet achieves sup
 )
     * [Image edge extraction](https://github.com/shengli666666/DedustNet#image-edge-extraction
 )
-* [Ablation Study](https://github.com/shengli666666/DedustNet#Ablation-Study)
 * [Citation](https://github.com/shengli666666/DedustNet#Citation)
    
 ## Network Architecture
@@ -144,7 +143,7 @@ A higher Entropy score indicates that the image presents more detail; a lower NI
 
 __The uploaded images are high quality and slow to refresh, thank you very much for your patience!__
 
-### RB-Dust datasets
+### RB-Dust dataset
 
 <center>
     <img src='image/rbdust.png'>
@@ -154,7 +153,7 @@ __The uploaded images are high quality and slow to refresh, thank you very much 
     <img src='image/rbdustnew.png'>
 </center>
 
-### SID datasets
+### SID dataset
 
 <center>
     <img src='image/sid.png'>
@@ -177,7 +176,7 @@ To verify the robustness and effectiveness of DedustNet, we have done extension 
 
 ## Application test
 
-To more fully validate the potential performance of our method on other vision tasks, we performed keypoint matching detection and image edge detection.
+To more fully validate the potential performance of our method on other vision tasks, we performed keypoint matching detection, image edge detection, object detection, and salient object detection.
 
 ### Keypoint matching detection
 
