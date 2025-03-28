@@ -113,6 +113,8 @@ For your quick run, we have selected a small number of dusty images in the `./da
 
 *Put  models in the `./trained_models/` folder.*
 
+we have train our model on two datasets: RB-Dust dataset and SID dataset, please see the link in ReadMe file to find the google drive link to download them, link is here [trained_model.pk](https://drive.google.com/drive/folders/1g6X7wYV_yILRqYx7GoUuhW4CSJXiPnCZ?usp=sharing)
+
 To test the pre-trained models of Dust, Dense-Haze, and NHHaze on your own images, run:
 ```shell
 python test.py --task Task_Name --input_dir path_to_images
