@@ -39,6 +39,9 @@ if not os.path.exists(output_dir):
 
 ####please change your trained_model path 
 model_dir='./trained_models/'+f'dustformer.pk'
+### we have train our model on two datasets: RB-Dust dataset and SID dataset, 
+### please see the link in ReadMe file to find the google drive link to download them
+### link is here https://drive.google.com/drive/folders/1g6X7wYV_yILRqYx7GoUuhW4CSJXiPnCZ?usp=sharing
 
 device='cuda' if torch.cuda.is_available() else 'cpu'
 ckp=torch.load(model_dir,map_location=device)
